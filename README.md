@@ -7,8 +7,24 @@ My personal `.tmux.conf` settings. Contains custom bindings and plugins.
 Clone the repo and create a symbolic link to the `.tmux.conf` config file.
 
 ```bash
-git clone https://github.com/steven-nichols/dottmux.git ~/.tmux
+git clone --recursive https://github.com/steven-nichols/dottmux.git ~/.tmux
 ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
+```
+
+That's it. Enjoy!
+
+## Troubleshooting
+
+First, try reloading the config file:
+
+```bash
+tmux source ~/.tmux.conf
+```
+
+If the plugins aren't working correctly, double-check that the `--recursive` option was used in the `git clone` command. If not you may need to run this command to fetch the plugins:
+
+```bash
+git submodule update --init --recursive
 ```
 
 ## Tmux cheatsheet
