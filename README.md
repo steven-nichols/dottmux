@@ -1,15 +1,15 @@
-# dottmux tmux config
+# dottmux
 
-My personal tmux settings. Contains custom bindings and plugins.
+My personal `.tmux.conf` settings. Contains custom bindings and plugins.
 
 ## Installation
+
+Clone the repo and create a symbolic link to the `.tmux.conf` config file.
 
 ```bash
 git clone https://github.com/steven-nichols/dottmux.git ~/.tmux
 ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
 ```
-
-Now run `tmux` and then install the plugin list by hitting `ctrl-a + I` (capital 'I' for 'Install')
 
 ## Tmux cheatsheet
 
@@ -43,7 +43,7 @@ p    previous
 
 ### Misc
 ```
-d    detach
+d    detach (restore by running 'tmux attach')
 t    clock
 ```
 
