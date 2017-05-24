@@ -10,3 +10,7 @@
     path = plugins/tmux-resurrect
     url = https://github.com/tmux-plugins/tmux-resurrect
 
+[submodule "plugins/tmux-continuum"]
+    path = plugins/tmux-continuum
+    url = https://github.com/tmux-plugins/tmux-continuum
+
